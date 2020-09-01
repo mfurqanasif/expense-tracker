@@ -25,3 +25,15 @@ body{
   box-shadow :5px 5px whitesmoke; 
 }
 
+@media screen and (max-width: 900px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}

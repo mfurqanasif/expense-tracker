@@ -5,8 +5,14 @@ function History(){
     return(
         <div className="subcontainer">
             <br/>
-        <h1 className='sm'>Expense Tracker App</h1>
-        <h5 className='sm'>By M Furqan Asif</h5>
+        <h3 className='sm'>Expense Tracker App</h3>
+        <hr />
+    <ul>
+        <li><span>bill</span><span>3232</span></li>
+        <li><span>bill</span><span>3232</span></li>
+        <li><span>bill</span><span>3232</span></li>
+        <li><span>bill</span><span>3232</span></li>
+    </ul>
         </div>
     );
 }
