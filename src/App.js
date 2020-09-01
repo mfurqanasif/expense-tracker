@@ -7,18 +7,13 @@ import Transaction from './components/Transaction.js'
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <div className = 'container'>
-
+    <div className="outer-container">
+        <Header />
+      <div className="inner-container">  
         <AccountInfo />
         <History />
         <Transaction />
-
-
-        
-      </div>
-       
+      </div> 
     </div>
   );
 }

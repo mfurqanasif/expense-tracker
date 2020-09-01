@@ -3,21 +3,23 @@ import React from 'react';
 function Transaction(){
 
     return(
-        <div className="subcontainer" >
-            <br/>
-        <h1 className='sm'>Add Transaction</h1>
-        <form action="">
-       <label for="">Description</label>
-       <br />
-       <input type="text" placeholder="enter description" required/>
-       <br /><br />
-       <label for="">Amount</label>
-       <br />
-       <input type="number" placeholder="enter amount" required />
-       <br /><br />
+        <div className="appcomp" >
+        <h2 className='transaction'>Add Transaction</h2>
+        <button className= 'incbtn'> Income </button> 
+        <button className= 'expbtn'> Expense</button>
+        <p id="para">Select the Transaction Type.</p> 
+        <form className="transactionform" action="">
+            <label >Description</label>
+            <br />
+            <input type="text" placeholder="enter description" required/>
+            <br />
+            <label >Amount</label>
+            <br />
+            <input type="number" placeholder="enter amount" required />
+            <br />
 
-   </form>
-    <button> Add Transaction</button>    
+        </form>
+        <button className= 'addbtn'> Add Transaction</button>    
         </div>
     );
 }

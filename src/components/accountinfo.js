@@ -3,31 +3,30 @@ import React from 'react';
 function AccountInfo(){
 
     return(
-        <div className='subcontainer'>
-            <div>
-                <h3>
+        <div className='appcomp'>
+            <div className = "balance">
+                <h3 className="heading">
                 Balance
                 </h3>
-                <h1>
-                    $500
+                <h1 className="heading">
+                    $0.0
                 </h1>
             </div>
             <div className="income-expense">    
-                <div>    
-                    <h3>
+                <div className="income">    
+                    <h3 className="heading">
                         Income
                     </h3>
-                    <h1>
-                        $700
+                    <h1 className="heading">
+                        $0.0
                     </h1>
                 </div>
-                <div>
-                    
-                    <h3>
+                <div className="expense">
+                    <h3 className="heading">
                         Expense
                     </h3>
-                    <h1>
-                        $200
+                    <h1 className="heading">
+                        $0.0
                     </h1>
                 </div>
             </div>    
