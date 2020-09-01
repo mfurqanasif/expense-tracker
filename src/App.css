@@ -30,10 +30,18 @@ body{
     display: flex;
     flex-direction: row;
   }
+  .income-expense {
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 600px) {
   .container {
     display: flex;
     flex-direction: column;
+  }
+  .income-expense {
+    display: flex;
+    flex-direction: row;
   }
 }

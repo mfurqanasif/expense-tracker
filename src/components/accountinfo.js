@@ -12,7 +12,7 @@ function AccountInfo(){
                     $500
                 </h1>
             </div>
-            <div className="container">    
+            <div className="income-expense">    
                 <div>    
                     <h3>
                         Income
