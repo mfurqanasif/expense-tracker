@@ -36,11 +36,12 @@ body{
 
 .balance , .history ,
 .transaction {
+  
  text-align : left;
  background-color: rgb(26, 25, 25);
  color: white;
  margin-top: 20px;
- margin-left:10px;
+ margin-left:-5px;
  width: 80%;
  border-radius: 25px;
  padding: 20px;
@@ -183,7 +184,7 @@ ul.transactionlist {
   }
 
   .incbtn , .expbtn{
-    min-width: 50%;
+    min-width: 90px;
   }
   .history ,.transaction {
     font-size: 20px;
