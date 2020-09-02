@@ -18,7 +18,7 @@ function AccountInfo(){
                         Income
                     </h3>
                     <h1 className="heading">
-                        $0.0
+                        +$0.0
                     </h1>
                 </div>
                 <div className="expense">
@@ -26,7 +26,7 @@ function AccountInfo(){
                         Expense
                     </h3>
                     <h1 className="heading">
-                        $0.0
+                        -$0.0
                     </h1>
                 </div>
             </div>    

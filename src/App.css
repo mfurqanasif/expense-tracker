@@ -181,4 +181,11 @@ ul.transactionlist {
   .outer-container{
     width: 70%;
   }
+
+  .incbtn , .expbtn{
+    min-width: 50%;
+  }
+  .history ,.transaction {
+    font-size: 20px;
+  }
 }
