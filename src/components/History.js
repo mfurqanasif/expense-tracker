@@ -1,21 +1,22 @@
-import React from 'react';
+
+import React, {useContext} from 'react';
+import {TransactionItem} from './TransactionItem';
+import {GlobalContext} from '../context/contextTrans';
+
 
 function History(){
 
+    const { transactions } = useContext(GlobalContext);
+
     return(
         <div className="appcomp">
-        <h2 className='history'>Expense Tracker App</h2>
+        <h2 className='history'>Expenses</h2>
     <ul className='transactionlist'>
-        <li><span>bill</span><span>3232</span></li>
-        <li><span>gas bill</span><span>3232</span></li>
-        <li><span>electric bill</span><span>3232</span></li>
-        <li><span>phone bill</span><span>3232</span></li>
-        <li><span>pay</span><span>3232</span></li>
-        <li><span>phone buy </span><span>3232</span></li>
-        <li><span>dinner bill</span><span>3232</span></li>
-        <li><span>bouns</span><span>3232</span></li>
-        <li><span>icecream bill</span><span>3232</span></li>
-       
+      {
+          transactions.map(transaction => (
+            <TransactionItem key={transaction.id} transaction={transaction} />   
+          ))
+      } 
     </ul>
         </div>
     );

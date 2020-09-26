@@ -154,6 +154,57 @@ ul.transactionlist {
   box-shadow : 0 0 10px grey; 
 }
 
+.transactionlist li {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px 15px;
+  margin: 10px 0;
+
+  margin-left:-20px;
+  margin-top:5px;
+  margin-right: 10px;
+  border-radius: 15px;  
+}
+
+
+
+.transactionlist li.plus:hover {
+  background-color: #9bd673;
+  color: #f7f7f7
+}
+
+
+.transactionlist li.minus:hover {
+  background-color: #d46565;
+  color: #f7f7f7
+}
+
+
+.delete-btn {
+  cursor: pointer;
+  background-color: #8a6a66;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.transactionlist li:hover .delete-btn {
+  opacity: 1;
+  background-color: darkred;
+}
+
 
 @media screen and (max-width: 900px) {
   .inner-container {
